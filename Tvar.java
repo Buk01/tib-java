@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
  import java.util.Random;
+ import java.util.Arrays;
 /**
  *
  * @author Ucebna
@@ -15,6 +16,16 @@ public enum Tvar {
 
     public static Tvar nahodnyTvar(){
       return values () [new Random().nextInt(values().length)];
+    }
+
+
+    public static int vyska(Tvar tvar){
+      int vyska = 0;
+      for(int i = 0; i < 4; i++){
+        if(Arrays.asList(tvar.vTabulce()[i]).contains(true){
+          vyska++;
+        }
+      }
     }
 
     public boolean[][] vTabulce() {
